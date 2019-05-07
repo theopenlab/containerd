@@ -8,6 +8,8 @@
       shell:
         cmd: |
           set -xe
+          # Let job down to test the non-voting job
+          exit 1
           apt-get update
           apt-get install -y btrfs-tools libseccomp-dev git pkg-config
 
